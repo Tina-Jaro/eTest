@@ -38,7 +38,7 @@ function Navbar() {
             <div className='ml-10 flex items-baseline space-x-12 gap-10 font-bold '>
               {navLinks.map((link, index) => (
                 <a key={index} className='relative after:absolute after:w-3 after:left-0
-                after:bottom-3 after:bg-[#D54D3D]' 
+                after:bottom-3 after:bg-[#D54D3D] text-[#535252] hover:text-[#D54D3D]' 
                 href={link.link}>
                   {link.title}</a>
               ))}

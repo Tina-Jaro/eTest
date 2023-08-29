@@ -9,15 +9,18 @@ function Hero() {
     const slides = [
         {
             url: girl,
-            text: 'Create Computer Based Test with endless possibilities and very easy customization with eTest',
+            text: `Create Computer Based Test with endless
+            possibilities and very easy customization with eTest`,
         },
         {
             url: twogirls,
-            text: 'eTest is a Computer Based Testing software solution, suitable for all schools, training centers and organizations',
+            text: `eTest is a Computer Based Testing software solution, 
+            suitable for all schools, training centers and organizations`,
         },
         {
             url: computer,
-            text: 'eTest is a fit for all solution for testing a large number of test takers... its to use and secure',
+            text: `eTest is a fit for all solution for testing a large 
+            number of test takers... its to use and secure`,
         },
     ];
 
@@ -40,9 +43,11 @@ function Hero() {
     }, [currentIndex]);
 
     return (
-        <div className='max-w-[1400px] h-[100vh] w-full m-auto  relative transform transition-transform duration-500 ease-in-out'>
+        <div className='max-w-[1400px] h-[100vh] w-full m-auto  
+        relative transform transition-transform duration-500 ease-in-out'>
             <div style={{
-                backgroundImage: `linear-gradient(89.89deg, rgba(16, 17, 16, 0.678) 51.03%, rgba(217, 217, 217, 0) 99.9%), url(${slides[currentIndex].url})`
+                backgroundImage: `linear-gradient(89.89deg, 
+                    rgba(16, 17, 16, 0.678) 51.03%, rgba(217, 217, 217, 0) 99.9%), url(${slides[currentIndex].url})`
 
             }}
                 className='w-full h-full bg-center bg-cover duration-500'>
