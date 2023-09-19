@@ -10,15 +10,15 @@ const navLinks = [
   },
   {
     title: 'Features',
-    link: '#'
+    link: '#features'
   },
   {
     title: 'Blog',
-    link: '#'
+    link: '#news'
   },
   {
     title: 'Contact',
-    link: '#'
+    link: '#contact'
   },
 ]
 function Navbar() {
@@ -28,11 +28,11 @@ function Navbar() {
     setOpen((prev) => !prev)
   }
   return (
-    <div className='bg-white'>
+    <div className='bg-white absolute w-full z-50'>
       <div className='mx-auto px-4 sm:px-6 lg:px-8 '>
         <div className='flex items-center justify-between h-16'>
           <div className='flex items-center'>
-            <img src={logo} alt='logo' />
+            <img src={logo} alt='logo' className='cursor-pointer' />
           </div>
           <div className='hidden md:block'>
             <div className='ml-10 flex items-baseline space-x-12 gap-10 font-bold '>
@@ -62,7 +62,8 @@ function Navbar() {
           <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
           {navLinks.map((link, index) => (
                 <a key={index} 
-                className='block px-3 py-2 text-[#535252] hover:text-[#D54D3D] hover:border-b-2 hover:border-[#D54D3D]'
+                className='block px-2 py-2 relative after:absolute after:w-6 after:left-0
+                after:bottom-0.5 after:h-0.5 after:bg-transparent hover:after:bg-[#D54D3D] text-[#535252] hover:text-[#D54D3D'
                  href={link.link}>
                   {link.title}</a>
               ))}

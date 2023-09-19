@@ -6,7 +6,7 @@ import calculator from '../assets/images/calculator.png';
 
 function News() {
     return (
-        <div className='bg-[#FAF8F8] pb-12 flex flex-col gap-[20px] pl-[5%] pr-[5%] h-auto overflow-hidden'>
+        <div className='bg-[#FAF8F8] pb-12 flex flex-col gap-[20px] pl-[5%] pr-[5%] h-auto overflow-hidden' id='news'>
             <div className='w-[100%]'>
                 <div className='w-[100%] mt-[20px]'>
                     <div>
